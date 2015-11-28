@@ -1,0 +1,9 @@
+<%= form_for @video do |f| %>
+  <div class="field">
+    <%= f.label :video_id %><br>
+    <%= f.file_field :video_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

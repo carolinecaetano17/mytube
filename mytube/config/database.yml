@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  username: postgres
+  password: 123456
+
+
+development:
+  <<: *default
+  database: mytube_development
+
+test:
+  <<: *default
+  database: mytube_test
+
+production:
+  <<: *default
+  database: mytube_production
